@@ -1,2 +1,2 @@
-# base-template
-Base template repository for drafts
+# This is a test
+This is a test.
