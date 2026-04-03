@@ -16,7 +16,7 @@
 -->
 
   <front>
-    <title abbrev="Connected Identity for STIR">Connected Identity for the Secure Telephone Identity Revisited (STIR)</title>
+    <title abbrev="Connected Identity for STIR">Connected Identity for STIR</title>
     <seriesInfo name="RFC" value="0000"/>
     <author initials="J." surname="Peterson" fullname="Jon Peterson">
       <organization abbrev="TransUnion">TransUnion</organization>
@@ -142,7 +142,7 @@
 	It is worth noting as well that at the time <xref target="RFC4916" format="default"/> was written, the Identity mechanism was far stricter about what counted as retargeting than <xref target="RFC8224" format="default"/>, which has canonicalization processes that eliminate minor changes to the URIs, especially when telephone numbers are the identifiers used by the caller and callee. For basic use cases, a PASSporT in a 183 or 200 OK should be sufficient to secure media keys for the purposes of SIPBRANDY <xref target="RFC8862" format="default"/>.
       </t>
       <t>
-	The handling of an "rsp" PASSporT differs from the handling of a PASSporT received in a SIP request. Most importantly, note that SIP responses cannot be rejected, unlike SIP requests -- there is no way for the recipient of a response to report errors to the sender. The only protocol action that the calling party could take upon receiving a response carrying a problem PASSporT is to issue a CANCEL (for provisional dialogs) or BYE request in order to tear down the dialog (see <xref target="authz" format="default"/>). Moreover, provisional responses are not reliably delivered without using 100rel and PRACK <xref target="RFC3262"/>, and provisional responses may be consumed (without forwarding<) by intermediaries under a variety of conditions. In short, their delivery is not guaranteed.
+	The handling of an "rsp" PASSporT differs from the handling of a PASSporT received in a SIP request. Most importantly, note that SIP responses cannot be rejected, unlike SIP requests -- there is no way for the recipient of a response to report errors to the sender. The only protocol action that the calling party could take upon receiving a response carrying a problem PASSporT is to issue a CANCEL (for provisional dialogs) or BYE request in order to tear down the dialog (see <xref target="authz" format="default"/>). Moreover, provisional responses are not reliably delivered without using 100rel and PRACK <xref target="RFC3262"/>, and provisional responses may be consumed (without forwarding) by intermediaries under a variety of conditions. In short, their delivery is not guaranteed.
       </t>
     </section>
     <section anchor="div" numbered="true" toc="default">
