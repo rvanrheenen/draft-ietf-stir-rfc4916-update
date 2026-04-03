@@ -12,8 +12,11 @@
 
 <rfc xmlns:xi="http://www.w3.org/2001/XInclude" category="std" docName="draft-ietf-stir-rfc4916-update-07" number="0000" consensus="true" ipr="trust200902" obsoletes="" updates="" submissionType="IETF" xml:lang="en" tocInclude="true" tocDepth="4" symRefs="true" sortRefs="true" version="3">
 
+<!-- [rfced] FYI - Chris, we updated your email address to chris@appliedbits.com per your response to the document intake.
+-->
+
   <front>
-    <title abbrev="Connected Identity">Connected Identity for STIR</title>
+    <title abbrev="Connected Identity for STIR">Connected Identity for STIR</title>
     <seriesInfo name="RFC" value="0000"/>
     <author initials="J." surname="Peterson" fullname="Jon Peterson">
       <organization abbrev="TransUnion">TransUnion</organization>
@@ -24,10 +27,10 @@
     <author fullname="Chris Wendt" initials="C." surname="Wendt">
       <organization>Somos</organization>
       <address>
-        <email>chris-ietf@chriswendt.net</email>
+        <email>chris@appliedbits.com</email>
       </address>
     </author>
-    <date year="2026" month="January"/>
+    <date year="2026" month="April"/>
 
     <area>ART</area>
     <workgroup>stir</workgroup>
@@ -208,7 +211,7 @@
 	  This specification defines a "rsp" PASSporT type that is sent only in SIP responses; it <bcp14>MUST NOT</bcp14> be sent in SIP requests. Any "rsp" PASSporTs received in requests <bcp14>MUST</bcp14> be ignored.
       </t>
       <t>
-	  The header of a "rsp" PASSporT shows a "ppt" of "rsp":
+	  The header of a "rsp" PASSporT shows a "ppt" of "rsp":<
       </t>
       <sourcecode type="json"><![CDATA[
 { "typ":"passport",
@@ -303,4 +306,18 @@
       <t>We would like to thank <contact fullname="Russ Housley"/>, <contact fullname="Jonathan Rosenberg"/>, and <contact fullname="Orie Steele"/> for their contributions to this specification.</t>
     </section>
   </back>
+
+<!-- [rfced] Please review the "Inclusive Language" portion of the online 
+Style Guide <https://www.rfc-editor.org/styleguide/part2/#inclusive_language>
+and let us know if any changes are needed.  Updates of this nature typically
+result in more precise language, which is helpful for readers.
+
+Note that our script did not flag any words in particular, but this should 
+still be reviewed as a best practice.
+
+In addition, please consider whether "tradition" and "tradition" should be updated for clarity.  
+While the NIST website <https://web.archive.org/web/20250214092458/https://www.nist.gov/nist-research-library/nist-technical-series-publications-author-instructions#table1>
+indicates that this term is potentially biased, it is also ambiguous.  
+"Tradition" is a subjective term, as it is not the same for everyone.
+--> 
 </rfc>
